@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  imperio_admin:
+    container_name: imperio_admin
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3730:3000"
+    network_mode: bridge
